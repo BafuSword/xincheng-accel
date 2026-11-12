@@ -1,0 +1,10 @@
+*.apk
+*.aab
+*.jks
+*.keystore
+keystore.properties
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
