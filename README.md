@@ -1,5 +1,6 @@
-# xincheng-accel
-安卓单机应用加速与应用双开工具
+# 新程加速器 XinCheng Accel
+
+> 安卓应用双开与单机应用省时工具
 > Android app container for dual-instance apps and time-saving on offline apps.
 
 ## 下载
@@ -9,20 +10,20 @@
 | 官网 | https://xincheng-accel.app.workbuddy.host/?sharecode=G6UWLXPWAQ | 完整链接，含访问参数 |
 | GitHub Releases | 见右侧 Releases | 推荐，速度稳定 |
 
-当前版本：**v2.1.0** ｜ 大小：**5.11 MB (5,359,764 字节)** ｜ 最低系统：Android 7.0
+当前版本：**v2.1.2** ｜ 大小：**5.08 MB (5,322,510 字节)** ｜ 最低系统：Android 5.0（API 21）｜ 架构：arm64-v8a
 
 ```
-SHA-256: dda74b6af2b1f4b93a68bfceaac61beba2894f592dbaa02bdcf200fccf15f440
+SHA-256: 5e1c0949753abf4ee045fad37db2a1e8daaa4a64544466a1733ad4d92a8ff33b
 ```
 
 下载后可自行校验，确保文件未被二次修改：
 
 ```bash
 # Windows (PowerShell)
-Get-FileHash .\xincheng-v2.1.0.apk -Algorithm SHA256
+Get-FileHash .\xincheng-v2.1.2.apk -Algorithm SHA256
 
 # macOS / Linux
-shasum -a 256 xincheng-v2.1.0.apk
+shasum -a 256 xincheng-v2.1.2.apk
 ```
 
 ## 功能
@@ -40,7 +41,7 @@ shasum -a 256 xincheng-v2.1.0.apk
 
 ## 安装
 
-1. 下载 `xincheng-v2.1.0.apk`
+1. 下载 `xincheng-v2.1.2.apk`
 2. 允许浏览器「安装未知来源应用」
 3. 打开安装包，按提示完成安装
 
@@ -71,33 +72,22 @@ shasum -a 256 xincheng-v2.1.0.apk
 ## 常见问题
 
 **Q：装不上，提示「应用未安装」或直接被拦截？**
-A：华为/荣耀先关闭纯净模式；其他机型检查是否允许未知来源安装。若系统里已存在旧版本
-（包名 `top.niunaijun.blackboxa64`），需先卸载旧版。
+A：华为/荣耀先关闭纯净模式；其他机型检查是否允许未知来源安装。
 
 **Q：双开的应用收不到消息？**
 A：在系统设置里给本应用开启「自启动」和「后台运行不受限制」，部分系统还需要锁定后台。
 
-**Q：能加速联网游戏吗？**
-A：不能。本工具只调整单机应用的本地运行节奏，不涉及网络延迟，也不修改任何在线数据。
+**Q：能用于联网对战类应用吗？**
+A：不能，也不建议。本工具只调整单机应用在本地运行时的节奏，不涉及网络传输，也不修改任何
+在线数据。用于在线对战、竞技类应用违反其服务条款，可能导致账号被限制，后果由使用者自负。
 
-## 版本记录
-
-### v2.1.0
-- 更换为新程正式签名（证书 SHA-256 `A917A249…7045`）
-- 包名更改为 `com.xincheng.accel`
-- 界面重构：深色玻璃卡片、光晕效果
-- 移除软件设置、虚拟定位等无用模块，体积从 8.07 MB 降至 5.11 MB
 
 ## 免责声明
 
 本软件仅供个人学习与技术研究使用。使用者应遵守相关法律法规及第三方软件的用户协议。
-因使用本软件产生的任何后果由使用者自行承担。本项目不提供任何在线游戏的修改能力，
+因使用本软件产生的任何后果由使用者自行承担。本项目不提供任何在线对战类应用的修改能力，
 亦不认同将本工具用于破坏公平性的场景。
 
 ## 许可
 
 本项目基于 Apache License 2.0。
-
----
-
-如果这个工具对你有用，点个 Star 就是最大的支持。
